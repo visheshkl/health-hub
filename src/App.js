@@ -5,6 +5,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import UserDash from './views/UserDash/UserDash';
 import LogReg from "./views/LogReg/LogReg";
 import TopNav from "./components/TopNav/TopNav";
+import JMPSBot from './components/JMPSBot/JMPSBot';
 
 import "./App.css";
 
@@ -34,6 +35,7 @@ function App() {
         </Route>
         <Route exact path="/dashboard">
           <UserDash isLoggedIn={isLoggedIn} logMeOut={logMeOut} updateLoginState={updateLoginState} />
+          <JMPSBot />
         </Route>
       </Switch>
     </div>
