@@ -64,7 +64,7 @@ const SideBar = () => {
 
       <NavLink exact className={styles.sideLink}
         name='home'
-        to='/dashboard/analysis'
+        to='/contact'
         activeClassName={styles.activeSideNavClass}
       >
         <i className={classNames('fas', 'fa-id-badge', styles.sideNavIcon)} />

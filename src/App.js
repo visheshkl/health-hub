@@ -7,6 +7,7 @@ import LogReg from "./views/LogReg/LogReg";
 import TopNav from "./components/TopNav/TopNav";
 
 import "./App.css";
+import Contact from "./views/ContactUs/ContactUs";
 
 function App() {
   const [isLoggedIn, updateLoginState] = useState(true);
@@ -34,6 +35,9 @@ function App() {
         </Route>
         <Route path="/dashboard">
           <UserDash isLoggedIn={isLoggedIn} logMeOut={logMeOut} updateLoginState={updateLoginState} />
+        </Route>
+        <Route path="/contact">
+          <Contact />
         </Route>
       </Switch>
     </div>
