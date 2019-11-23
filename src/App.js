@@ -32,7 +32,7 @@ function App() {
         <Route exact path="/login">
           <Redirect to="/" />
         </Route>
-        <Route exact path="/dashboard">
+        <Route path="/dashboard">
           <UserDash isLoggedIn={isLoggedIn} logMeOut={logMeOut} updateLoginState={updateLoginState} />
         </Route>
       </Switch>

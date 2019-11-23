@@ -15,6 +15,7 @@ const SideBar = () => {
       <a href='https://sehatone.com/' className={classNames(styles.sideLink, styles.headerLogo, styles.pointer)}>
         <img src={logo} alt="magehost logo" className={styles.headerLogoImg} />
       </a>
+
       <NavLink exact className={styles.sideLink}
         name='hohme'
         to='/dashboard'
@@ -24,22 +25,52 @@ const SideBar = () => {
         <i className={classNames('fas', 'fa-home', styles.sideNavIcon)} />
         <span className={styles.sideText}>Home</span>
       </NavLink>
+
       <NavLink className={styles.sideLink}
         name='home'
         to='/dashboard/sites'
         activeClassName={styles.activeSideNavClass}
       >
         <i className={classNames('fas', 'fa-globe', styles.sideNavIcon)} />
-        <span className={styles.sideText}>Websites</span>
+        <span className={styles.sideText}>Analysis</span>
       </NavLink>
+
       <NavLink exact className={styles.sideLink}
         name='home'
-        to='/dashboard/guide'
+        to='/dashboard/analysis'
         activeClassName={styles.activeSideNavClass}
       >
         <i className={classNames('fas', 'fa-book', styles.sideNavIcon)} />
-        <span className={styles.sideText}>User Guide</span>
+        <span className={styles.sideText}>Reports</span>
       </NavLink>
+
+      <NavLink exact className={styles.sideLink}
+        name='home'
+        to='/dashboard/raise'
+        activeClassName={styles.activeSideNavClass}
+      >
+        <i className={classNames('fas', 'fa-exclamation', styles.sideNavIcon)} />
+        <span className={styles.sideText}>Raise a Concern</span>
+      </NavLink>
+
+      <NavLink exact className={styles.sideLink}
+        name='home'
+        to='/dashboard/analysis'
+        activeClassName={styles.activeSideNavClass}
+      >
+        <i className={classNames('fas', 'fa-user-md', styles.sideNavIcon)} />
+        <span className={styles.sideText}>Talk to Doctor</span>
+      </NavLink>
+
+      <NavLink exact className={styles.sideLink}
+        name='home'
+        to='/dashboard/analysis'
+        activeClassName={styles.activeSideNavClass}
+      >
+        <i className={classNames('fas', 'fa-id-badge', styles.sideNavIcon)} />
+        <span className={styles.sideText}>Contact HealthHub</span>
+      </NavLink>
+
     </div>
   );
 }
