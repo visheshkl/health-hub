@@ -1,13 +1,18 @@
-import React, { Component } from 'react';
-import { Widget, addResponseMessage, addLinkSnippet, toggleInputDisabled } from 'react-chat-widget';
+import React, {useState, useEffect} from 'react';
+import { Widget, addResponseMessage, toggleInputDisabled } from 'react-chat-widget';
 import arcreactor from '../../assets/logo.png'
 import 'react-chat-widget/lib/styles.css';
 import './JMPSBot.css';
 
 const JMPSBot = (props) => {
 
+  const [badge, setBadge] = useState(1);
+  useEffect(() => {
+    addResponseMessage('How are you feeling?')
+  }, [])
+
   const handleMessage = (message) => {
-    if(message.toLowerCase().includes('help'))
+    if(message.toLowerCase().includes('help?'))
       setTimeout(() => {addResponseMessage(`Just enter your symptoms with severity and let me try`);}, 1000);
     else if(message.toLowerCase().includes('hey') || message.toLowerCase().includes('hello') | message.toLowerCase().includes(' hi '))
       setTimeout(() => {addResponseMessage(`Hey man!`);}, 1000);
@@ -72,18 +77,23 @@ const JMPSBot = (props) => {
       else if(message.includes('chest pain') && message.includes('left')){
         addResponseMessage('Call an ambulance immediately! You may have a heart attack! I am sending out notifications with your location to nearby Cardiologists.');
       }
+      else if(message.includes('cough') && message.includes('cold')){
+        addResponseMessage("So you have caught cold. You should be fine in a week. You may take 'Sinarest', 'Cheston Cold', 'Benadryl' and the likes 2 times a day for temporary relaxation. If consistent, visit a doctor.");
+      }
       else{
         addResponseMessage("I'm still learning and I don't have the answer to that yet. However, I've made a note and will learn it soon enough.")
       }
     })
   }
   return (
-    <div>
+    <div onClick={() => {setBadge(0)}}>
       <Widget 
         handleNewUserMessage={handleMessage}
-        title='The Doctor'
+        title='DocBot'
         subtitle=''
         profileAvatar={arcreactor}
+        badge={badge}
+        
        />
     </div>
   );
