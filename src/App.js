@@ -8,6 +8,7 @@ import TopNav from "./components/TopNav/TopNav";
 import JMPSBot from './components/JMPSBot/JMPSBot';
 
 import "./App.css";
+import Contact from "./views/ContactUs/ContactUs";
 
 function App() {
   const [isLoggedIn, updateLoginState] = useState(true);
@@ -33,9 +34,12 @@ function App() {
         <Route exact path="/login">
           <Redirect to="/" />
         </Route>
-        <Route exact path="/dashboard">
+        <Route path="/dashboard">
           <UserDash isLoggedIn={isLoggedIn} logMeOut={logMeOut} updateLoginState={updateLoginState} />
           <JMPSBot />
+        </Route>
+        <Route path="/contact">
+          <Contact />
         </Route>
       </Switch>
     </div>
