@@ -17,6 +17,14 @@ a {
   text-decoration: none;
   outline: none;
 }
+:root{
+	--widthNavLogo: 110px;
+	--widthSideBar: 250px;
+	--heightNav: 80px;
+  --balloon-font-size: 16px;
+  --primaryColor: rgb(0, 87, 255);
+  --secondaryColor: rgb(40, 210, 171);
+}
 
 button::-moz-focus-inner {
   border: 0;

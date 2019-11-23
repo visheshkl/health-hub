@@ -5,7 +5,8 @@
 	z-index: 0;
 	min-height: 100%;
 	width: var(--widthSideBar);
-	background: #000062;
+  background: #000062;
+  background: linear-gradient(160deg, var(--primaryColor), var(--secondaryColor)) repeat scroll 0% 0%;
 	position: fixed;
 	left: 0;
     /*box-shadow: rgba(34, 36, 38, 0.15) .1px 0px 1px 1px;*/
@@ -39,7 +40,7 @@
 }
 
 .headerLogoImg{
-	width: 60%;
+	height: 80%;
 	margin: auto;
 }
 .sideNavIcon{

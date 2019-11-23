@@ -6,6 +6,7 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import './assets/fontawesome/css/solid.min.css';
 import './assets/fontawesome/css/fontawesome.min.css';
+import 'tachyons';
 
 ReactDOM.render(
   <Router>

@@ -1,0 +1,157 @@
+.mainNavDiv{
+	z-index: 0;
+	background: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+    position: sticky;
+    top: 0px;
+    text-align: center;
+    text-size-adjust: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: var(--heightNav);
+    /*box-shadow: rgba(34, 36, 38, 0.15) 0px 6px 4px .1px;*/
+
+}
+
+.navLeft, .navRight{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	height: var(--heightNav);
+}
+
+.accountDrop > span {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navLinks{
+	/*display: inline-block;*/
+	color: #000062;
+	cursor: pointer;
+	font-size: 16px;
+	height: 40px;
+	min-width: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: calc(0.6rem + 1px);
+	margin: 0 5px;
+	/*margin: 10px;*/
+}
+
+.navLinks:hover {
+	/*background: rgba(0,0,0,0.4);*/
+	background: rgba(63, 82, 221, 0.4);
+	border-radius: 15px;
+}
+.navLinks:active {
+	outline: none;
+}
+
+.activeNavClass, .activeNavClass:hover{
+	background: #292961;
+	color: white;
+	font-weight: bold;
+	border-radius: 15px;
+}
+#searchNav {
+	border: 2px solid #b9bdd5;
+	height: 45px;
+	border-radius: 10px;
+}
+#searchNav:focus {
+	border: 2px solid #292961;
+}
+.searchIconBar{
+	color: #292961;
+	position: relative;
+	font-size: 20px;
+	top: 2px;
+	left: 30px;
+	margin-left: 5px;
+}
+
+/*.addButton {
+	padding-left: .3rem;
+	padding-right: .3rem;
+}*/
+
+.notifBell{
+	padding-left: .5rem;
+	padding-right: .5rem;
+}
+
+/*.addButton:active, .activeNavClass:hover{
+	background: rgba(255,255,255, 0.95);
+	color: #292961;
+	font-weight: bold;
+	border-radius: 15px;
+}*/
+
+/*
+ACCOUNT DROP PROPERTIES HERE 
+*/
+
+.accountDrop{
+    /*height: var(--heightNav);*/
+    /*color: white;*/
+    list-style: none;
+    margin-right: 20px;
+}
+
+.accountDrop img{
+    width: 30px;
+    border: 2px solid #cac7c7;
+    border-radius: 20px;
+}
+
+.accountDrop ul.dropdown{
+    background: white;
+    width: 200px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+    top: 55px;
+    box-shadow: rgba(34, 36, 38, 0.15) .1px 2px 4px 2px;
+    border: 0px solid rgba(34, 36, 38, 0.15);
+    border-radius: 5px;
+    margin: 3px;
+    padding: 5px;
+}
+
+.accountDrop:hover ul.dropdown{
+    display: block; 
+}
+.accountDrop ul.dropdown li{
+    display: block;
+}
+
+.accountDrop li:hover{
+    background: #eeeeee;
+}
+
+.dropdown li{
+    padding: 8px;
+    color: black;
+    border-radius: 8px;
+}
+
+@media only screen and (max-width: 1000px) {
+	.mainNavDiv{
+		justify-content: flex-end;
+	}
+	.navLeft, .dashBtn, .addButton {
+		display: none;
+	}
+}

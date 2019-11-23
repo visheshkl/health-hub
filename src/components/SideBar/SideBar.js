@@ -2,6 +2,8 @@ import React from 'react'
 import {NavLink} from 'react-router-dom';
 import classNames from 'classnames';
 
+import logo from '../../assets/logo.png';
+
 import styles from './SideBar.module.css'
 
 const SideBar = () => {
@@ -9,9 +11,9 @@ const SideBar = () => {
   //const handleItemClick = (e, { name }) => setActiveItem(name)
 
   return(
-    <div id="sideNavv">
+    <div id={styles.sideNavv}>
       <a href='https://sehatone.com/' className={classNames(styles.sideLink, styles.headerLogo, styles.pointer)}>
-        <img src={`aa`} alt="magehost logo" className='headerLogoImg' />
+        <img src={logo} alt="magehost logo" className={styles.headerLogoImg} />
       </a>
       <NavLink exact className={styles.sideLink}
         name='hohme'
