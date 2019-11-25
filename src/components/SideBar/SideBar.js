@@ -28,7 +28,7 @@ const SideBar = ({parentLink}) => {
 
       <NavLink className={styles.sideLink}
         name='home'
-        to={parentLink+'/sites'}
+        to={parentLink+'/analysis'}
         activeClassName={styles.activeSideNavClass}
       >
         <i className={classNames('fas', 'fa-globe', styles.sideNavIcon)} />
@@ -37,7 +37,7 @@ const SideBar = ({parentLink}) => {
 
       <NavLink exact className={styles.sideLink}
         name='home'
-        to={parentLink+'/analysis'}
+        to={parentLink+'/reports'}
         activeClassName={styles.activeSideNavClass}
       >
         <i className={classNames('fas', 'fa-book', styles.sideNavIcon)} />

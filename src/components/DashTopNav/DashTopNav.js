@@ -16,14 +16,6 @@ const DashTopNav = (props) => {
       </div>
 
       <div className={styles.navRight}>
-        <NavLink className={classNames(styles.navLinks, styles.addButton)}
-          name='home'
-          to='/dash/add'
-         activeClassName={styles.activeNavClass}
-        >
-          <span>Add <i className="fas fa-plus" /> </span>
-        </NavLink>
-
         <NavLink className={classNames(styles.navLinks, styles.dashBtn)}
           name='home'
           to='/dashboard'

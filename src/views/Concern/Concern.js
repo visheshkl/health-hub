@@ -32,7 +32,7 @@ const cordiData = [
   },
 ];
 
-const Contact = () => {
+const Concern = () => {
   const [inputs, changeInputs] = useState({ name: '', email: '', subject: '', message: '' });
   const [datae, setData] = useState({ data: null, loading: false, error: null });
 
@@ -109,49 +109,11 @@ const Contact = () => {
 
   return (
     <>
-      <Link to="/">
-        <img src={logo} className={style.contact_aurora_logo} alt="logo" />
-      </Link>
       <div className={style.contact_parent_container}>
         <div className={style.contact_container}>
-          <div className={style.contact_left}>
-            <div className={style.contact_us}>
-              <h3 className={style.contact_heading}>Contact Us :</h3>
-              <div className={style.contact_card}>
-                {cordiData.map(cData => (
-                  <div className={style.cordi}>
-                    <h4 className={style.cordi_heading}>{cData.name}</h4>
-                    <a href={`tel:${cData.tel}`}>
-                      Call
-                    </a>
-
-                    <a href={`mailto:${cData.mail}`}>
-                      <Mail width="30px" height="30px" />
-                    </a>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className={style.find_us}>
-              <h3 className={style.contact_heading}>Find Us :</h3>
-              <div className={style.map_container}>
-                <div className={style.map_outer}>
-                  <div className={style.gmap_canvas}>
-                    <iframe
-                      width="100%"
-                      height="100%"
-                      id="gmap_canvas"
-                      src="https://maps.google.com/maps?q=IIIIM%20Gwalior&t=&z=17&ie=UTF8&iwloc=&output=embed"
-                      frameBorder="0"
-                      scrolling="no"
-                      marginHeight="0"
-                      marginWidth="0"
-                      title="g_map"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className={style.contact_left} style={{marginLeft: "120px", fontWeight: "bold"}} >
+            If you think a child/student needs help, kindly enter his details and we'll do
+            everything in our power to help him. Thanks for caring!
           </div>
           <div className={style.contact_divider} />
           <div className={style.contact_right}>
@@ -223,4 +185,4 @@ const Contact = () => {
     </>
   );
 };
-export default Contact;
+export default Concern;
