@@ -45,9 +45,18 @@ const LoginCard = ({updateLoginState}) => {
 		window.localStorage.setItem('token', data.login);
 		console.log('login successful: token: ', data.login);
 		updateLoginState(true);
-		return (
-			<Redirect to="/dashboard" />
-		);
+		if(inputs.email.includes('doctor'))
+			return (
+				<Redirect to="/doctorDashboard" />
+			);
+		if(inputs.email.includes('org'))
+			return (
+				<Redirect to="/orgDashboard" />
+			);
+		else
+			return (
+				<Redirect to="/dashboard" />
+			);
 	}
 	if ( error ) {
 		if(error.graphQLErrors.length > 0 && error.graphQLErrors[0].extensions.code === "UNAUTHENTICATED")

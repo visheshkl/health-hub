@@ -3,6 +3,8 @@ import { Switch, Route, Redirect } from "react-router-dom";
 
 // import Home from './views/Home/Home';
 import UserDash from './views/UserDash/UserDash';
+import DoctorDash from './views/DoctorDash/DoctorDash';
+import OrgDash from './views/OrgDash/OrgDash';
 import LogReg from "./views/LogReg/LogReg";
 import TopNav from "./components/TopNav/TopNav";
 import JMPSBot from './components/JMPSBot/JMPSBot';
@@ -36,6 +38,14 @@ function App() {
         </Route>
         <Route path="/dashboard">
           <UserDash isLoggedIn={isLoggedIn} logMeOut={logMeOut} updateLoginState={updateLoginState} />
+          <JMPSBot />
+        </Route>
+         <Route path="/doctorDashboard">
+          <DoctorDash isLoggedIn={isLoggedIn} logMeOut={logMeOut} updateLoginState={updateLoginState} />
+          <JMPSBot />
+        </Route>
+        <Route path="/orgDashboard">
+          <OrgDash isLoggedIn={isLoggedIn} logMeOut={logMeOut} updateLoginState={updateLoginState} />
           <JMPSBot />
         </Route>
         <Route path="/contact">

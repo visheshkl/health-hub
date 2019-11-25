@@ -1,0 +1,27 @@
+.dashboardContainer {
+	display: flex;
+	min-height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
+}
+.main-right {
+	width: calc(100% - var(--widthSideBar));
+	margin-left: var(--widthSideBar);
+	min-height: 100%;
+}
+.containerWrapper{
+	/*margin-left: calc(var(--widthNavLogo) + 5px);*/
+	margin-top: 10px;
+	text-align: justify;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1000px) {
+	.main-right {
+		width: 100%;
+		margin-left: 0;
+		background: linear-gradient(45deg, rgb(118, 82, 185), rgb(4, 16, 104)) repeat scroll 0% 0%;
+	}
+}

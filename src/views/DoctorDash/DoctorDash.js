@@ -5,10 +5,10 @@ import Charts from '../../components/Charts/Charts';
 
 import styles from './UserDash.module.css';
 
-const UserDash = ({ isLoggedIn, logMeOut }) => {
+const DoctorDash = ({ isLoggedIn, logMeOut }) => {
   return (
     <div className={styles.dashboardContainer}>
-      <SideBar parentLink='/dashboard' />
+      <SideBar parentLink='doctorDashboad' />
       <div className={styles["main-right"]}>
         <DashTopNav isLoggedIn={isLoggedIn} logMeOut={logMeOut} />
         <div className={styles.containerWrapper}>
@@ -19,4 +19,4 @@ const UserDash = ({ isLoggedIn, logMeOut }) => {
   );
 };
 
-export default UserDash;
+export default DoctorDash;

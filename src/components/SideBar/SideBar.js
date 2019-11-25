@@ -6,7 +6,7 @@ import logo from '../../assets/logo.png';
 
 import styles from './SideBar.module.css'
 
-const SideBar = () => {
+const SideBar = ({parentLink}) => {
   //const [activeItem, setActiveItem] = useState('globe');
   //const handleItemClick = (e, { name }) => setActiveItem(name)
 
@@ -18,7 +18,7 @@ const SideBar = () => {
 
       <NavLink exact className={styles.sideLink}
         name='hohme'
-        to='/dashboard'
+        to={parentLink}
         alt='Home'
         activeClassName={styles.activeSideNavClass}
       >
@@ -28,7 +28,7 @@ const SideBar = () => {
 
       <NavLink className={styles.sideLink}
         name='home'
-        to='/dashboard/sites'
+        to={parentLink+'/sites'}
         activeClassName={styles.activeSideNavClass}
       >
         <i className={classNames('fas', 'fa-globe', styles.sideNavIcon)} />
@@ -37,7 +37,7 @@ const SideBar = () => {
 
       <NavLink exact className={styles.sideLink}
         name='home'
-        to='/dashboard/analysis'
+        to={parentLink+'/analysis'}
         activeClassName={styles.activeSideNavClass}
       >
         <i className={classNames('fas', 'fa-book', styles.sideNavIcon)} />
@@ -46,7 +46,7 @@ const SideBar = () => {
 
       <NavLink exact className={styles.sideLink}
         name='home'
-        to='/dashboard/raise'
+        to={parentLink+'/raise'}
         activeClassName={styles.activeSideNavClass}
       >
         <i className={classNames('fas', 'fa-exclamation', styles.sideNavIcon)} />
@@ -55,7 +55,7 @@ const SideBar = () => {
 
       <NavLink exact className={styles.sideLink}
         name='home'
-        to='/dashboard/analysis'
+        to={parentLink+'/analysis'}
         activeClassName={styles.activeSideNavClass}
       >
         <i className={classNames('fas', 'fa-user-md', styles.sideNavIcon)} />
