@@ -2,6 +2,7 @@ import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import LoginCard from '../../components/LoginCard/LoginCard';
 import RegisterCard from '../../components/RegisterCard/RegisterCard';
+import bg from '../../assets/mood.webp';
 import './LogReg.css';
 
 const LogReg = ({updateLoginState}) => {
@@ -11,7 +12,7 @@ const LogReg = ({updateLoginState}) => {
 	}
 	return (
 		<section className='loginSection'>
-			<div className='login-left'>
+			<div className='login-left' style={{ backgroundImage: `url(${bg})`}}>
 				<h2>Keep track of your Health.</h2>
 			</div>
 			<div className="triangle-right"></div>
