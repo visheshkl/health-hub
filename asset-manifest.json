@@ -1,28 +1,29 @@
 {
   "files": {
-    "main.css": "/health-hub/static/css/main.a9f7377a.chunk.css",
-    "main.js": "/health-hub/static/js/main.62b19ba8.chunk.js",
-    "main.js.map": "/health-hub/static/js/main.62b19ba8.chunk.js.map",
+    "main.css": "/health-hub/static/css/main.f7f42e5d.chunk.css",
+    "main.js": "/health-hub/static/js/main.1f809782.chunk.js",
+    "main.js.map": "/health-hub/static/js/main.1f809782.chunk.js.map",
     "runtime-main.js": "/health-hub/static/js/runtime-main.a30db993.js",
     "runtime-main.js.map": "/health-hub/static/js/runtime-main.a30db993.js.map",
     "static/css/2.fa748e1e.chunk.css": "/health-hub/static/css/2.fa748e1e.chunk.css",
-    "static/js/2.0bb1cb44.chunk.js": "/health-hub/static/js/2.0bb1cb44.chunk.js",
-    "static/js/2.0bb1cb44.chunk.js.map": "/health-hub/static/js/2.0bb1cb44.chunk.js.map",
+    "static/js/2.0e0a0926.chunk.js": "/health-hub/static/js/2.0e0a0926.chunk.js",
+    "static/js/2.0e0a0926.chunk.js.map": "/health-hub/static/js/2.0e0a0926.chunk.js.map",
     "index.html": "/health-hub/index.html",
-    "precache-manifest.0470dda50fcc066b745f087ab9b31ff4.js": "/health-hub/precache-manifest.0470dda50fcc066b745f087ab9b31ff4.js",
+    "precache-manifest.d351f5e8fe7d86474455d3de9d28c780.js": "/health-hub/precache-manifest.d351f5e8fe7d86474455d3de9d28c780.js",
     "service-worker.js": "/health-hub/service-worker.js",
     "static/css/2.fa748e1e.chunk.css.map": "/health-hub/static/css/2.fa748e1e.chunk.css.map",
-    "static/css/main.a9f7377a.chunk.css.map": "/health-hub/static/css/main.a9f7377a.chunk.css.map",
-    "static/js/2.0bb1cb44.chunk.js.LICENSE.txt": "/health-hub/static/js/2.0bb1cb44.chunk.js.LICENSE.txt",
+    "static/css/main.f7f42e5d.chunk.css.map": "/health-hub/static/css/main.f7f42e5d.chunk.css.map",
+    "static/js/2.0e0a0926.chunk.js.LICENSE.txt": "/health-hub/static/js/2.0e0a0926.chunk.js.LICENSE.txt",
     "static/media/solid.min.css": "/health-hub/static/media/fa-solid-900.ef3df984.eot",
     "static/media/JMPSBot.css": "/health-hub/static/media/logo.f59f35a6.png",
-    "static/media/mail-new.eb39e7c7.svg": "/health-hub/static/media/mail-new.eb39e7c7.svg"
+    "static/media/mail-new.eb39e7c7.svg": "/health-hub/static/media/mail-new.eb39e7c7.svg",
+    "static/media/mood.webp": "/health-hub/static/media/mood.015b3abf.webp"
   },
   "entrypoints": [
     "static/js/runtime-main.a30db993.js",
     "static/css/2.fa748e1e.chunk.css",
-    "static/js/2.0bb1cb44.chunk.js",
-    "static/css/main.a9f7377a.chunk.css",
-    "static/js/main.62b19ba8.chunk.js"
+    "static/js/2.0e0a0926.chunk.js",
+    "static/css/main.f7f42e5d.chunk.css",
+    "static/js/main.1f809782.chunk.js"
   ]
 }
