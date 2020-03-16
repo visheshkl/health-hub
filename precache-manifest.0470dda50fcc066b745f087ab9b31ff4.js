@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0be1695c9a45ed6fd050a1fc42a6d180",
+    "revision": "6f7473cabbf901367eec63d89788a43c",
     "url": "/health-hub/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/health-hub/static/css/2.fa748e1e.chunk.css"
   },
   {
-    "revision": "e2a796fcd2525b8f56de",
+    "revision": "a7861d5baaf545992798",
     "url": "/health-hub/static/css/main.a9f7377a.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/health-hub/static/js/2.0bb1cb44.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e2a796fcd2525b8f56de",
-    "url": "/health-hub/static/js/main.674d7ef7.chunk.js"
+    "revision": "a7861d5baaf545992798",
+    "url": "/health-hub/static/js/main.62b19ba8.chunk.js"
   },
   {
     "revision": "52d97a24c04a6e228086",
